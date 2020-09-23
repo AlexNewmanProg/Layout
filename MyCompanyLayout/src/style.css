@@ -123,11 +123,17 @@ main .main_about {
     text-align: center;
     text-transform: uppercase;
     font-size: 44px;    
-    border-bottom: 3px solid #fcac45;
-    padding-bottom: 30px;
-    margin-bottom: 130px;
-    display: inline-block;
+    /*border-bottom: 3px solid #fcac45;
+     padding-bottom: 30px; */
     
+    display: inline-block;    
+}
+
+.main_team .line {
+    width: 100px;
+    margin: 30px auto 100px auto;
+    border-top: 3px solid #fcac45;
+    /* margin: 30px 0 130px 0; */
 }
 
 .main_team .wrapper {
