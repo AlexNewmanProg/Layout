@@ -45,11 +45,116 @@ nav {
 }
 
 .topnav a:hover {
-    border-bottom: 3px solid #fcac45 ;
+    border-bottom: 3px solid #fcac45;
 }
 
 .icon {
     display: none;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main_welcome {
+    background: #000;
+    text-align: center;
+    padding: 200px 0 420px 0;
+    z-index: -1;
+}
+
+.main_welcome h1 {
+    font-size: 44px;
+    text-transform: uppercase;
+    color: #999999;
+    font-weight: normal;
+}
+
+.main_welcome .mycompany {
+    color: #fcac45;
+    font-weight: bold;
+}
+
+.main_welcome p {
+    font-size: 20px;
+    color: #d4d4d4;
+    font-weight: normal;
+}
+
+.wrapper {
+    width: 76%;
+    margin: 0 auto;
+}
+
+main .main_about {
+    display: flex;
+    padding: 100px 0;
+}
+
+.right_side {    
+    margin-left: 180px;
+}
+
+.right_side h1{    
+    display: inline-block;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #fcac45;
+}
+
+.right_side p{    
+    padding: 30px 0 45px 0;
+    color: #6c6c6c;
+}
+
+.right_side li{
+    list-style-image: "../images/point.png";
+}
+
+.main_team {
+    width: 100%;
+    padding: 100px 0 165px 0;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.main_team h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 44px;    
+    border-bottom: 3px solid #fcac45;
+    padding-bottom: 30px;
+    margin-bottom: 130px;
+    display: inline-block;
+    
+}
+
+.main_team .wrapper {
+    display: flex;
+}
+
+.main_team .team_card {
+    height: 300px;
+    width: 260px;
+    text-align: center;
+}
+
+.main_team .team_card img {
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    margin-bottom: 30px;
+}
+
+.main_team .team_card .name{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main_team .team_card .post{
+    font-size: 16px;
+    margin-bottom: 30px;   
 }
 
 @media screen and (max-width: 1200px) {
