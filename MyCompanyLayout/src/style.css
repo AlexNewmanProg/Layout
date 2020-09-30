@@ -8,7 +8,7 @@ a {
 }
 
 li {
-    list-style: none;
+    /* list-style: none; */
 }
 
 body {
@@ -93,25 +93,30 @@ main .main_about {
 }
 
 .right_side {    
-    margin-left: 180px;
+    margin-left: 125px;
+    font-size: 16px;
 }
 
 .right_side h1{    
+    font-weight: 100;
     display: inline-block;
     padding-bottom: 20px;
     border-bottom: 3px solid #fcac45;
 }
 
 .right_side p{    
-    padding: 30px 0 45px 0;
+    padding: 30px 0 35px 0;
     color: #6c6c6c;
 }
 
-.right_side li{
-    list-style-image: "../images/point.png";
+.right_side ul{
+    color: #6c6c6c;
+    list-style-image: url("../images/point.png");
+    list-style-position: inside;
+    line-height: 35px;
 }
 
-.main_team {
+.main_team, .main_services {
     width: 100%;
     padding: 100px 0 165px 0;
     background-color: #000;
@@ -119,48 +124,66 @@ main .main_about {
     text-align: center;
 }
 
-.main_team h1 {
+.main_team h1, .main_services h1 {
     text-align: center;
     text-transform: uppercase;
-    font-size: 44px;    
-    /*border-bottom: 3px solid #fcac45;
-     padding-bottom: 30px; */
-    
+    font-size: 44px;   
     display: inline-block;    
 }
 
-.main_team .line {
+.line {
     width: 100px;
     margin: 30px auto 100px auto;
     border-top: 3px solid #fcac45;
-    /* margin: 30px 0 130px 0; */
 }
 
-.main_team .wrapper {
+.main_team .wrapper, .main_services .wrapper {
     display: flex;
 }
 
-.main_team .team_card {
+.main_team .card, .main_services .card {
     height: 300px;
     width: 260px;
     text-align: center;
 }
 
-.main_team .team_card img {
+.main_team .card img,
+.main_services .card img {
     width: 130px;
     height: 130px;
     border-radius: 100%;
     margin-bottom: 30px;
 }
 
-.main_team .team_card .name{
+.main_team .card .name{
     font-size: 20px;
     font-weight: bold;
 }
 
-.main_team .team_card .post{
+.main_team .card .post{
     font-size: 16px;
     margin-bottom: 30px;   
+}
+
+.main_services {
+    background-color: #fff;
+}
+
+.main_services h1 {
+    font-size: 44px;
+    color: black;
+}
+
+.main_services .about_services {
+    margin: 0 auto;
+    width: 1130px;
+    color: #6c6c6c;
+    font-style: italic;
+    margin-bottom: 100px;   
+}
+
+.main_services .line {
+    margin-bottom: 50px;
 }
 
 @media screen and (max-width: 1200px) {
