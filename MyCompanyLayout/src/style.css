@@ -182,8 +182,47 @@ main .main_about {
     margin-bottom: 100px;   
 }
 
+.main_services .card {
+    color: #000;
+}
+
 .main_services .line {
     margin-bottom: 50px;
+}
+
+.main_services .card_img {
+    display: inline-block;
+    width: 125px;
+    height: 125px;
+    margin-bottom: 27px;
+    border-radius: 50%;
+    border: 5px solid #fcac45;    
+}
+
+.main_services .card .name {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.main_services .card .about {
+    font-size: 14px;
+}
+
+ #service_1 {
+    background: url(../images/WebDesign.png) center no-repeat;
+}
+
+ #service_2 {
+    background: url(../images/MobileApps.png) center no-repeat;
+}
+
+ #service_3 {
+    background: url(../images/Photography.png) center no-repeat;
+}
+
+ #service_4 {
+    background: url(../images/Marketing.png) center no-repeat;
 }
 
 @media screen and (max-width: 1200px) {
