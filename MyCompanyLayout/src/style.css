@@ -116,15 +116,19 @@ main .main_about {
     line-height: 35px;
 }
 
-.main_team, .main_services {
-    width: 100%;
-    padding: 100px 0 165px 0;
+.main_team, .main_clients {
     background-color: #000;
     color: #fff;
+}
+
+.main_team, .main_services, .main_clients, .main_works {
+    width: 100%;
+    padding: 100px 0 165px 0;
     text-align: center;
 }
 
-.main_team h1, .main_services h1 {
+.section_title
+{
     text-align: center;
     text-transform: uppercase;
     font-size: 44px;   
@@ -137,11 +141,13 @@ main .main_about {
     border-top: 3px solid #fcac45;
 }
 
-.main_team .wrapper, .main_services .wrapper {
+.main_team .wrapper,
+.main_services .wrapper {
     display: flex;
 }
 
-.main_team .card, .main_services .card {
+.main_team .card,
+.main_services .card {
     height: 300px;
     width: 260px;
     text-align: center;
@@ -174,7 +180,10 @@ main .main_about {
     color: black;
 }
 
-.main_services .about_services {
+.main_services .about_services,
+.main_works .about_work
+{
+    text-align: center;
     margin: 0 auto;
     width: 1130px;
     color: #6c6c6c;
@@ -223,6 +232,45 @@ main .main_about {
 
  #service_4 {
     background: url(../images/Marketing.png) center no-repeat;
+}
+
+.main_clients h1 {
+    color: #fff;
+    font-size: 44px;
+    font-weight: 100;
+}
+
+.main_clients h1 span,
+.main_works h1 span {
+    font-weight: bold;
+}
+
+.main_clients img {
+    display: inline-block;
+    margin-left: 34px;
+}
+
+.row {
+    font-size: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.row:first-child {
+    margin-top: 0;
+}
+
+.item {
+    flex: 25%;
+    max-width: 22.6%;
+    margin-right: 30px;
+}
+
+.item:nth-child(4n){
+    margin-right: 0;
 }
 
 @media screen and (max-width: 1200px) {
