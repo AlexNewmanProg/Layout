@@ -116,12 +116,16 @@ main .main_about {
     line-height: 35px;
 }
 
-.main_team, .main_clients {
+.main_team, .main_clients, .main_testimonials {
     background-color: #000;
     color: #fff;
 }
 
-.main_team, .main_services, .main_clients, .main_works {
+.main_team,
+.main_services,
+.main_clients,
+.main_works,
+.main_testimonials {
     width: 100%;
     padding: 100px 0 165px 0;
     text-align: center;
@@ -241,7 +245,8 @@ main .main_about {
 }
 
 .main_clients h1 span,
-.main_works h1 span {
+.main_works h1 span,
+.main_testimonials h1 span {
     font-weight: bold;
 }
 
@@ -271,6 +276,24 @@ main .main_about {
 
 .item:nth-child(4n){
     margin-right: 0;
+}
+
+/*Testimonials*/
+.main_testimonials h1{
+    font-weight: 100;   
+}
+.main_testimonials {
+    font-size: 18px;
+    
+}
+
+.main_testimonials .testimonial_text p {    
+    text-transform: uppercase;
+}
+
+.main_testimonials .testimonial_text .author {
+    color: #b2b2b2;
+    margin-top: 50px;
 }
 
 @media screen and (max-width: 1200px) {
